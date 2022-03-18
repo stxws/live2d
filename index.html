@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+	<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="tools/css/live2d_tools.css"/>
+
+	<div class="live2d-container">
+		<div class="live2d-tips"></div>
+		<canvas id="live2d-canvas" width="380" height="500" ></canvas>
+		<div class="live2d-tools">
+			<i class="fa fa-commenting"></i>
+			<i class="fa fa-chevron-down"></i>
+			<i class="fa fa-chevron-up"></i>
+		</div>
+	</div>
+
+	<!-- Live2DCubismCore script -->
+	<script src="./Core/live2dcubismcore.js"></script>
+	<!-- liv2d build script -->
+	<script src="./dist/bundle.js"></script>
+	<!-- liv2d tools -->
+	<script type="text/javascript" src="./tools/js/live2d_tools.js"></script>
+	<script>
+		var live2d_canvas = document.getElementById("live2d-canvas");
+		live2d_controller.load_model(live2d_canvas, "./models/Murasame/Murasame.model3.json");
+	</script>
+</body>
+
+</html>
