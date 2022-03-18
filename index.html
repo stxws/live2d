@@ -1,0 +1,30 @@
+<html>
+	<head>
+	</head>
+	<body>
+	</body>
+</html>
+
+<!-- <script src="./main.js"></script> -->
+
+<link type="text/css" rel="stylesheet" href="./assets/waifu.css">
+<div class="waifu">
+	<div class="waifu-tips"></div>
+	<canvas id="live2d" height="380" style="width:300px;" ></canvas>
+	<div class="waifu-tool">
+		<i class="fui-chat" ></i>
+		<i class="fui-photo" ></i>
+		<i class="fui-user" ></i>
+		<i class="fui-triangle-down" ></i>
+	</div>
+</div>
+<div class="waifu-show">
+	<i class= "fui-triangle-up"></i>
+</div>
+<script type="text/javascript" src="./assets/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/model.js"></script>
+<script type="text/javascript" src="./assets/live2d.js"></script>
+<script type="text/javascript" src="./assets/waifu.js"></script>
+<script>
+	loadlive2d('live2d', models[0].models[0].link);
+</script>

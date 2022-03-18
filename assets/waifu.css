@@ -1,0 +1,127 @@
+.waifu {
+	position: fixed;
+	bottom: 0px;
+	z-index: 5;
+	font-size: 0;
+	pointer-events: none;
+}
+
+.waifu-tips {
+	color: #fff;
+	width: 300px;
+	transition: 0.5s all;
+	bottom: 100%;
+	text-align: center;
+	font-size: 13px;
+	font-weight: 400;
+}
+.waifu-tip-item {
+	color: #0089f7;
+	font-size: 16px;
+	pointer-events: auto;
+	border: 1px solid rgba(255, 137, 255, 0.4);
+	border-radius: 12px;
+	background-color: rgba(255, 137, 255, 0.2);
+	box-shadow: 0 3px 15px 2px rgba(255, 137, 255, 0.4);
+	animation-duration: 0.5s;
+	animation-name: fadeInRight;
+	padding: 7px;
+	margin-bottom: 20px;
+}
+
+.waifu-tool,.waifu-show {
+	position: fixed;
+	color: #aaa;
+	bottom: 220px;
+	left: 25px;
+	font-size: 24px;
+	line-height: 30px;
+}
+.waifu-tool {
+	display: inline-block;
+}
+.waifu-show {
+	display: none;
+	z-index: 5;
+}
+
+.waifu-tool i {
+	display: block;
+	cursor: pointer;
+	pointer-events: auto;
+	color: rgba(255, 137, 255, 0.3);
+	transition: 0.2s;
+	text-align: center;
+}
+.waifu-tool i:hover {
+	color: rgba(255, 137, 255, 0.8);
+}
+
+.waifu-show i {
+	display: block;
+	cursor: pointer;
+	pointer-events: auto;
+	color: rgba(255, 137, 255, 0.3);
+	transition: 0.2s;
+	text-align: center;
+}
+.waifu-show i:hover {
+	color: rgba(255, 137, 255, 0.8);
+}
+
+.waifu #live2d {
+	position: relative;
+	bottom: 0;
+	z-index: 5;
+	pointer-events: none;
+}
+
+
+@font-face {
+	font-family: 'Flat-UI-Icons';
+	src: url('flat-ui-icons-regular.eot');
+	src: url('flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'),
+	url('flat-ui-icons-regular.woff') format('woff'),
+	url('flat-ui-icons-regular.ttf') format('truetype'),
+	url('flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
+}
+[class^='fui-'],
+[class*='fui-'] {
+	font-family: 'Flat-UI-Icons';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.fui-cross:before {
+	content: '\e609';
+}
+.fui-info-circle:before {
+	content: '\e60f';
+}
+.fui-photo:before {
+	content: '\e62a';
+}
+.fui-eye:before {
+	content: '\e62c';
+}
+.fui-chat:before {
+	content: '\e62d';
+}
+.fui-home:before {
+	content: '\e62e';
+}
+.fui-user:before {
+	content: '\e631';
+}
+.fui-exit:before {
+	content: '\e638';
+}
+.fui-triangle-up:before {
+	content: '\e600';
+}
+.fui-triangle-down:before {
+	content: '\e601';
+}
